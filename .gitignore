@@ -1,0 +1,7 @@
+/.vs/BouncyCastleExtensions/v15/*.suo
+/.vs/BouncyCastleExtensions/v15/Server/sqlite3/*.lock
+/.vs/BouncyCastleExtensions/v15/Server/sqlite3/*.ide
+/.vs/BouncyCastleExtensions/v15/Server/sqlite3/*.ide-shm
+/.vs/BouncyCastleExtensions/v15/Server/sqlite3/*.ide-wal
+/src/obj/Debug/*.cache
+/tests/obj/Debug/*.cache
