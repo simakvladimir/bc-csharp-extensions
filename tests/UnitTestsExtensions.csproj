@@ -45,6 +45,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\AssemblyInfo.cs" />
+    <Compile Include="src\cms\KncaSignedDataTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bc-csharp\crypto\BouncyCastle.csproj">
+      <Project>{4c235092-820c-4deb-9074-d356fb797d8b}</Project>
+      <Name>BouncyCastle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bc-csharp\crypto\test\UnitTests.csproj">
+      <Project>{d4eb669d-7c88-48c0-a480-c5cc73a7369b}</Project>
+      <Name>UnitTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BouncyCastleExtensions.csproj">
+      <Project>{c2c3d8e4-f837-410d-b1c1-c3849295e096}</Project>
+      <Name>BouncyCastleExtensions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
