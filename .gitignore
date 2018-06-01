@@ -5,3 +5,13 @@
 /.vs/BouncyCastleExtensions/v15/Server/sqlite3/*.ide-wal
 /src/obj/Debug/*.cache
 /tests/obj/Debug/*.cache
+/bin/Debug
+/obj/Debug
+/.vs/BouncyCastleExtensions/DesignTimeBuild/*.dtbcache
+/src/bin/Debug
+/src/obj/Debug
+/tests/*.user
+/tests/bin/Debug
+/tests/obj/Debug
+/tests/src/bin/Debug
+/tests/src/obj/Debug
