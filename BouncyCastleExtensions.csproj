@@ -7,7 +7,7 @@
     <ProjectGuid>{C2C3D8E4-F837-410D-B1C1-C3849295E096}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BouncyCastleExtensions</RootNamespace>
+    <RootNamespace>Org.BouncyCastle.Extensions</RootNamespace>
     <AssemblyName>BouncyCastleExtensions</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -36,6 +36,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\AssemblyInfo.cs" />
+    <Compile Include="src\crypto\digests\GOST34311Digest.cs" />
+    <Compile Include="src\crypto\digests\GOST34311DigestFactory.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310PrivateKeyFactory.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310PrivateKeyParameters.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310PublicKeyFactory.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310PublicKeyParameters.cs" />
+    <Compile Include="src\crypto\signers\GOST34310DigestSigner.cs" />
+    <Compile Include="src\crypto\signers\GOST34310DigestSignerFactory.cs" />
+    <Compile Include="src\ExtensionsHandler.cs" />
+    <Compile Include="src\ObjectIdentifiers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\crypto\encryptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="bc-csharp\crypto\BouncyCastle.csproj">
+      <Project>{4c235092-820c-4deb-9074-d356fb797d8b}</Project>
+      <Name>BouncyCastle</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
