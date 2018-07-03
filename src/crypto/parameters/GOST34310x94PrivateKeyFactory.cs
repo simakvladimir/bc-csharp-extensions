@@ -8,13 +8,13 @@ using Org.BouncyCastle.Extension;
 
 namespace Org.BouncyCastle.Extensions.Crypto.Parameters
 {
-    internal class Gost34310PrivateKeyFactory : IKeyFactoryExtension
+    internal class Gost34310x94PrivateKeyFactory : IKeyFactoryExtension
     {
         public bool CanCreateKey(SubjectPublicKeyInfo keyInfo)
         {
             AlgorithmIdentifier algID = keyInfo.AlgorithmID;
             DerObjectIdentifier algOid = algID.Algorithm;
-            return algOid.Equals(ObjectIdentifiers.GostR34310Key);
+            return algOid.Equals(ObjectIdentifiers.GostR34310x94Key);
         }
 
         public AsymmetricKeyParameter CreateKey(SubjectPublicKeyInfo key)

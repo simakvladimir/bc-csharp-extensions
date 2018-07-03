@@ -7,24 +7,25 @@ using Org.BouncyCastle.Asn1.CryptoPro;
 using Org.BouncyCastle.Asn1.X509;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Extension;
+using Org.BouncyCastle.Extensions.Asn1;
 using Org.BouncyCastle.Math;
 
 namespace Org.BouncyCastle.Extensions.Crypto.Parameters
 {
-    public class Gost34310PublicKeyFactory : IKeyFactoryExtension
+    public class Gost34310x94PublicKeyFactory : IKeyFactoryExtension
     {
         public bool CanCreateKey(SubjectPublicKeyInfo keyInfo)
         {
             AlgorithmIdentifier algID = keyInfo.AlgorithmID;
             DerObjectIdentifier algOid = algID.Algorithm;
-            return algOid.Equals(ObjectIdentifiers.GostR34310Key);
+            return algOid.Equals(ObjectIdentifiers.GostR34310x94Key);
         }
 
         public AsymmetricKeyParameter CreateKey(SubjectPublicKeyInfo keyInfo)
         {
             AlgorithmIdentifier algID = keyInfo.AlgorithmID;
 
-            Gost3410PublicKeyAlgParameters algParams = new Gost3410PublicKeyAlgParameters(
+            Gost34310PublicKeyAlgParameters algParams = new Gost34310PublicKeyAlgParameters(
                 (Asn1Sequence)algID.Parameters);
 
             DerOctetString derY;
@@ -34,7 +35,7 @@ namespace Org.BouncyCastle.Extensions.Crypto.Parameters
             }
             catch (IOException)
             {
-                throw new ArgumentException("invalid info structure in GOST3410 public key");
+                throw new ArgumentException("invalid info structure in GOST34310 public key");
             }
 
             byte[] keyEnc = derY.GetOctets();
@@ -47,7 +48,7 @@ namespace Org.BouncyCastle.Extensions.Crypto.Parameters
 
             BigInteger y = new BigInteger(1, keyBytes);
 
-            return new Gost34310PublicKeyParameters(y, algParams.PublicKeyParamSet);
+            return new Gost34310x94PublicKeyParameters(y, algParams.PublicKeyParamSet);
         }
     }
 }

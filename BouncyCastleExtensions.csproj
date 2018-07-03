@@ -35,15 +35,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\asn1\Gost34310NamedCurves.cs" />
+    <Compile Include="src\asn1\GOST34310NamedParameters.cs" />
+    <Compile Include="src\asn1\GOST34310ParamSetParameters.cs" />
+    <Compile Include="src\asn1\GOST34310PublicKeyAlgParameters.cs" />
     <Compile Include="src\AssemblyInfo.cs" />
     <Compile Include="src\crypto\digests\GOST34311Digest.cs" />
     <Compile Include="src\crypto\digests\GOST34311DigestFactory.cs" />
-    <Compile Include="src\crypto\parameters\GOST34310PrivateKeyFactory.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310x2004PublicKeyFactory.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310KeyParameters.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310x2004PublicKeyParameters.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310x94PrivateKeyFactory.cs" />
     <Compile Include="src\crypto\parameters\GOST34310PrivateKeyParameters.cs" />
-    <Compile Include="src\crypto\parameters\GOST34310PublicKeyFactory.cs" />
-    <Compile Include="src\crypto\parameters\GOST34310PublicKeyParameters.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310x94PublicKeyFactory.cs" />
+    <Compile Include="src\crypto\parameters\GOST34310x94PublicKeyParameters.cs" />
     <Compile Include="src\crypto\signers\GOST34310DigestSigner.cs" />
-    <Compile Include="src\crypto\signers\GOST34310DigestSignerFactory.cs" />
+    <Compile Include="src\crypto\signers\GOST34310x2004DigestSignerFactory.cs" />
+    <Compile Include="src\crypto\signers\GOST34310x2004Signer.cs" />
+    <Compile Include="src\crypto\signers\GOST34310x94DigestSignerFactory.cs" />
+    <Compile Include="src\crypto\signers\GOST34310x94Signer.cs" />
     <Compile Include="src\ExtensionsHandler.cs" />
     <Compile Include="src\ObjectIdentifiers.cs" />
   </ItemGroup>
