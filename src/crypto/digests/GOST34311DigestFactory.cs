@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Org.BouncyCastle.Asn1;
+﻿using Org.BouncyCastle.Asn1;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Extension;
 using Org.BouncyCastle.Extensions.Crypto.Digests;
 
-namespace Org.BouncyCastle.Extensions.src.crypto.digests
+namespace Org.BouncyCastle.Extensions.Crypto.Digests
 {
     internal class Gost34311DigestFactory : IDigestFactoryExtension
     {

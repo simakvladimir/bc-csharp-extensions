@@ -7,8 +7,8 @@
     <ProjectGuid>{C38359F4-D29D-4544-A551-772E63680DA5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTestsExtensions</RootNamespace>
-    <AssemblyName>UnitTestsExtensions</AssemblyName>
+    <RootNamespace>UnitTests.Extensions</RootNamespace>
+    <AssemblyName>UnitTests.Extensions</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -56,9 +56,9 @@
       <Project>{d4eb669d-7c88-48c0-a480-c5cc73a7369b}</Project>
       <Name>UnitTests</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BouncyCastleExtensions.csproj">
+    <ProjectReference Include="..\BouncyCastle.Extensions.csproj">
       <Project>{c2c3d8e4-f837-410d-b1c1-c3849295e096}</Project>
-      <Name>BouncyCastleExtensions</Name>
+      <Name>BouncyCastle.Extensions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

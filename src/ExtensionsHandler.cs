@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Org.BouncyCastle.Crypto.Parameters;
-using Org.BouncyCastle.Extension;
+﻿using Org.BouncyCastle.Extension;
+using Org.BouncyCastle.Extensions.Crypto.Digests;
 using Org.BouncyCastle.Extensions.Crypto.Parameters;
 using Org.BouncyCastle.Extensions.Crypto.Signers;
-using Org.BouncyCastle.Extensions.src.crypto.digests;
 
 namespace Org.BouncyCastle.Extensions
 {

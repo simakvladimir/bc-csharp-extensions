@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Org.BouncyCastle.Extensions</RootNamespace>
-    <AssemblyName>BouncyCastleExtensions</AssemblyName>
+    <AssemblyName>BouncyCastle.Extensions</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncyCastle", "bc-csharp\c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "bc-csharp\crypto\test\UnitTests.csproj", "{D4EB669D-7C88-48C0-A480-C5CC73A7369B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncyCastleExtensions", "BouncyCastleExtensions.csproj", "{C2C3D8E4-F837-410D-B1C1-C3849295E096}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncyCastle.Extensions", "BouncyCastle.Extensions.csproj", "{C2C3D8E4-F837-410D-B1C1-C3849295E096}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsExtensions", "tests\UnitTestsExtensions.csproj", "{C38359F4-D29D-4544-A551-772E63680DA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.Extensions", "tests\UnitTests.Extensions.csproj", "{C38359F4-D29D-4544-A551-772E63680DA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

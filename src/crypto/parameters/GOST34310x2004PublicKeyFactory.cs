@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using Org.BouncyCastle.Asn1;
 using Org.BouncyCastle.Asn1.CryptoPro;
 using Org.BouncyCastle.Asn1.X509;
@@ -9,7 +7,6 @@ using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Extension;
 using Org.BouncyCastle.Extensions.Asn1;
-using Org.BouncyCastle.Extensions.src.asn1;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Math.EC;
 
